@@ -45,6 +45,7 @@ func ListElasticacheReplicationGroups(sess *session.Session) ([]Resource, error)
 				svc:        svc,
 				groupID:    replicationGroup.ReplicationGroupId,
 				createTime: replicationGroup.ReplicationGroupCreateTime,
+				tags:       tags.TagList,
 			})
 		}
 
